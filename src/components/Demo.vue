@@ -11,7 +11,8 @@
   export default{
     data () {
       return {
-        items: [{title: '数据绑定', path: 'databinding'}]
+        items: [{title: '数据绑定', path: 'databinding'}, {title: '指令', path: 'Directive'}
+        ]
       }
     }
   }
