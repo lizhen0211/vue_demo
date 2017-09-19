@@ -12,7 +12,7 @@
       <p>Paragraph 1</p>
       <p>Paragraph 2</p>
     </template>
-
+    <hr>
 
     <!--v-show-->
     <!--显示或隐藏HTML元素-->
@@ -30,7 +30,7 @@
     <!--<custom-component v-show="condition"></custom-component>-->
     <!--<p v-show="condition">这可能也是一个组件</p>-->
 
-
+    <hr>
     <!--v-model-->
     <form>
       姓名：
@@ -59,6 +59,11 @@
         <option value="lawyer">律师</option>
       </select>
     </form>
+    <hr>
+    <!--v-model 指令后面还可以添加多个参数（number、layz、debounce）-->
+    <!--vue 2.0 没有生效-->
+    <!--<input v-model="msg" debuonce="5000"/>-->
+    <!--<input v-model="msg" lazy/>-->
   </div>
 </template>
 <script>
@@ -72,7 +77,8 @@
           sex: 'One',
           insterest: ['book', 'swim', 'game'],
           identity: 'teacher'
-        }
+        },
+        msg: '内容实在change事件后才改变的'
       }
     }
   }
