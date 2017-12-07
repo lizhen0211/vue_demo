@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>指令</h1>
+    <!--指令是特殊的带有前缀v-的特性。指令的值限定为绑定表达式，指令的职责就是-->
+    <!--当其表达式的值改变时把某些特殊的行为应用到DOM上。-->
     <p>内部指令</p>
     <!--v-if 指令可以完全根据表达式的值在DOM中生成或移除一个元素。-->
     <p v-if="greeting">Hello</p>
@@ -28,7 +30,7 @@
     <!--<p v-else>这可能也是一个组件</p>-->
     <!--我们可以用另一个v-show 替换v-else-->
     <!--<custom-component v-show="condition"></custom-component>-->
-    <!--<p v-show="condition">这可能也是一个组件</p>-->
+    <!--<p v-show="!condition">这可能也是一个组件</p>-->
 
     <hr>
     <!--v-model-->
